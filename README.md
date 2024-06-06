@@ -1,13 +1,38 @@
-# Sample Hardhat Project
+# MyToken Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project demonstrates the creation, deployment, and interaction with an ERC20 token using Solidity, Hardhat, and Ethers.js.
 
-Try running some of the following tasks:
+## Project Structure
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+- `contracts/MyToken.sol`: The ERC20 token smart contract with minting and burning functionalities.
+- `scripts/deploy.js`: Script to deploy the smart contract.
+- `scripts/interact.js`: Script to interact with the deployed contract (mint, transfer, burn tokens).
+- `hardhat.config.js`: Hardhat configuration file.
+
+## Prerequisites
+
+- Node.js and npm installed
+- Hardhat installed
+- A code editor like VS Code
+
+## Setup
+
+1. **Clone the repository**:
+   git clone https://github.com/your-username/mytoken.git
+   cd mytoken
+   Install dependencies:
+
+
+npm install
+Compile the smart contract:
+
+npx hardhat compile
+
+Deployment
+Deploy the smart contract to the Hardhat local network:
+
+npx hardhat run scripts/deploy.js
+
+npx hardhat run scripts/interact.js
+
+You now have a full project setup for creating, deploying, and interacting with an ERC20 token using Hardhat, Ethers.js, and Solidity.
