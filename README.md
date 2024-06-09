@@ -1,38 +1,16 @@
 # MyToken Project
 
-This project demonstrates the creation, deployment, and interaction with an ERC20 token using Solidity, Hardhat, and Ethers.js.
+This project demonstrates the creation, deployment, and interaction with an ERC20 token named "Anurag'token" symbol- "AT" using Solidity language and remix IDE.
 
 ## Project Structure
-
-- `contracts/MyToken.sol`: The ERC20 token smart contract with minting and burning functionalities.
-- `scripts/deploy.js`: Script to deploy the smart contract.
-- `scripts/interact.js`: Script to interact with the deployed contract (mint, transfer, burn tokens).
-- `hardhat.config.js`: Hardhat configuration file.
+store main file in your system and open via remix IDE 
 
 ## Prerequisites
-
-- Node.js and npm installed
-- Hardhat installed
-- A code editor like VS Code
+-basic solidity programming
 
 ## Setup
 
-1. **Clone the repository**:
-   git clone https://github.com/your-username/mytoken.git
-   cd mytoken
-   Install dependencies:
+-download zip 
+-open maim file in remix and other dependencies will be provided by remix IDE environment
 
-
-npm install
-Compile the smart contract:
-
-npx hardhat compile
-
-Deployment
-Deploy the smart contract to the Hardhat local network:
-
-npx hardhat run scripts/deploy.js
-
-npx hardhat run scripts/interact.js
-
-You now have a full project setup for creating, deploying, and interacting with an ERC20 token using Hardhat, Ethers.js, and Solidity.
+You now have a full project setup for creating, deploying, and interacting with an ERC20 token using Solidity and remix IDE.
