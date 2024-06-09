@@ -18,13 +18,13 @@ contract MyToken is ERC20, Ownable {
     }
 
     function transferringofTokens(address _Reciever, uint256 _Amount) external {
-        require(balanceOf(msg.sender) >= _Amount , "You do not have enough Degen tokens");
+        require(balanceOf(msg.sender) >= _Amount , "You do not have tokens, ask Anurag for more tokens");
         approve(msg.sender, _Amount);
         transferFrom(msg.sender, _Reciever, _Amount);
     }
 
     function burn(uint256 _Amount) public {
-        require(balanceOf(msg.sender) >= _Amount, "You do not have enough Degen Tokens");
+        require(balanceOf(msg.sender) >= _Amount, "You do not have tokens, ask Anurag for more tokens");
         _burn(msg.sender, _Amount);
     }
 }
